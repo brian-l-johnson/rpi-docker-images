@@ -10,9 +10,7 @@ pipeline {
     stage('build image') {
       steps {
         dir(path: 'jenkins-rpi') {
-          sh '''hostname
-pwd
-docker buildx build -t manage.local:5000/uname:multiarch --platform linux/amd64,linux/arm/v7,linux/arm64 --push .'''
+          sh 'docker buildx build -t manage.local:5000/uname:multiarch --platform linux/amd64,linux/arm/v7,linux/arm64 --push .'
         }
 
       }
