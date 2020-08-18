@@ -10,7 +10,8 @@ pipeline {
     stage('build image') {
       steps {
         dir(path: 'jenkins-rpi') {
-          sh 'hostname'
+          sh '''hostname
+pwd'''
         }
 
         sh 'id'
