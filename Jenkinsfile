@@ -13,6 +13,7 @@ pipeline {
           sh 'hostname'
         }
 
+        sh 'id'
       }
     }
 
