@@ -1,0 +1,3 @@
+[registry."manage.local:5000"]
+  http = true
+  insecure = true
