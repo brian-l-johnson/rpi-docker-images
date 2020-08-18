@@ -15,7 +15,9 @@ pwd'''
         }
 
         sh 'id'
-        sh 'docker buildx build -t manage.local:5000/uname:multiarch --platform linux/amd64,linux/arm/v7,linux/arm64 --push .'
+        sh '''pwd
+ls
+docker buildx build -t manage.local:5000/uname:multiarch --platform linux/amd64,linux/arm/v7,linux/arm64 --push .'''
       }
     }
 
