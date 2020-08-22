@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  triggers {
+    crom('H H * * *')
+  }
   stages {
     stage('print message') {
       steps {
