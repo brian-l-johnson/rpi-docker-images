@@ -1,7 +1,7 @@
 pipeline {
   agent any
   triggers {
-    crom('H H * * *')
+    cron('H H * * *')
   }
   stages {
     stage('print message') {
